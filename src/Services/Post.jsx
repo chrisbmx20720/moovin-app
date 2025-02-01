@@ -4,7 +4,7 @@ function Post(file, onProgress) {
       formData.append('archivo_pdf', file);
   
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'http://127.0.0.1:8000/api/procesar-pdf/', true);
+      xhr.open('POST', 'https://3d12-179-60-174-77.ngrok-free.app/api/procesar-pdf/', true);
   
       // Enviar el archivo al servidor
       xhr.onload = () => {
