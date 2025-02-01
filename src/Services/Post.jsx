@@ -4,7 +4,7 @@ function Post(file, onProgress) {
       formData.append('archivo_pdf', file);
   
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://3d12-179-60-174-77.ngrok-free.app/api/procesar-pdf/', true);
+      xhr.open('POST', 'https://backendmoo.vercel.app/Home/procesar-pdf/', true);
   
       // Enviar el archivo al servidor
       xhr.onload = () => {
